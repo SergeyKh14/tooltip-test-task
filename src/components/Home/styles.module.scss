@@ -1,0 +1,160 @@
+.home_section {
+  width: 100%;
+  height: 100%;
+  .open_box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 100px;
+      height: 50px;
+    }
+  }
+}
+.schedule_details_popup {
+  background: url('../../../public/img/popup-background.svg');
+  width: 658px;
+  // padding-left: 14px;
+  height: 475px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  top: 50%;
+  left: 50%;
+  .popup_section {
+    padding: 27px 35px 0 49px;
+    display: flex;
+    align-items: center;
+    .close_icon {
+      cursor: pointer;
+    }
+    p {
+      color: #ddd;
+      text-align: center;
+      font-family: SF Pro;
+      font-size: 24.118px;
+      font-style: normal;
+      font-weight: 590;
+      line-height: normal;
+      margin: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .empty_div {
+      width: 41px;
+    }
+  }
+}
+
+.schedule_box {
+  padding: 32px 43px 0 66px;
+  .schedule_child_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    div {
+      position: relative;
+    }
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 27px;
+      height: 27px;
+    }
+    :global {
+      .ant-picker {
+        background-color: transparent;
+        border: unset;
+        padding: unset !important;
+      }
+    }
+    input {
+      border-radius: 34.454px;
+      border: 2px solid var(--strokes-for-main-bg-tiny-buttons, rgba(255, 255, 255, 0.15));
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      height: 41.345px;
+      min-width: 113px;
+      font-family: SF Pro;
+      font-weight: 510;
+      padding: 0px 20.673px;
+      font-size: 20.673px;
+      outline: 0 !important;
+      color: #c9c9c9;
+      justify-content: center;
+      align-items: center;
+      &::placeholder {
+        color: #c9c9c9;
+      }
+    }
+    .picker_box input {
+      min-width: 168px;
+    }
+    p {
+      color: var(--Dark-mode-text-and-icons-on-claim-cards, #ddd);
+      font-family: SF Pro;
+      font-size: 20.673px;
+      font-style: normal;
+      font-weight: 590;
+      line-height: normal;
+      margin-bottom: unset;
+      margin-top: unset;
+    }
+    .schedule_text {
+      min-width: 60px;
+      margin-right: 20px;
+    }
+    .line {
+      margin-right: 41px;
+      margin-left: 41px;
+    }
+  }
+  textarea {
+    border-radius: 17.227px;
+    border: 2px solid var(--strokes-for-main-bg-tiny-buttons, rgba(255, 255, 255, 0.15));
+    background: rgba(255, 255, 255, 0.2);
+    font-family: SF Pro;
+    font-size: 20.673px;
+    color: #c9c9c9;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    width: 497px;
+    height: 103px;
+    resize: none;
+    outline: 0 !important;
+    text-align: center;
+    text-align: center;
+    display: block;
+    padding: 17px 20px;
+    margin-bottom: 24px;
+    &::placeholder {
+      color: #c9c9c9;
+    }
+  }
+  button {
+    cursor: pointer;
+    border-radius: 68.909px;
+    background: linear-gradient(90deg, #887dfd 0%, #006afa 100%);
+    width: 172.272px;
+    display: flex;
+    border: 0;
+    margin: auto;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: SF Pro;
+    font-size: 27.563px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    height: 51.681px;
+    justify-content: center;
+    align-items: center;
+  }
+}
